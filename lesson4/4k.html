@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Button Click Effect</title>
+    <style>
+        /* 基本按钮样式 */
+        .button {
+            background-color: #4CAF50;
+            /* 绿色背景 */
+            border: none;
+            /* 无边框 */
+            color: white;
+            /* 白色文字 */
+            padding: 15px 30px;
+            /* 内边距 */
+            text-align: center;
+            /* 文字居中 */
+            text-decoration: none;
+            /* 无下划线 */
+            display: inline-block;
+            /* 行内块元素 */
+            font-size: 16px;
+            /* 字体大小 */
+            margin: 10px 2px;
+            /* 外边距 */
+            cursor: pointer;
+            /* 鼠标指针 */
+            transition: all 0.2s;
+            /* 动画过渡 */
+            border-radius: 10px;
+            /* 圆角 */
+            box-shadow: 0 5px #666;
+            /* 阴影 */
+        }
+
+        /* 鼠标悬停时的样式 */
+        .button:hover {
+            background-color: #3e8e41;
+            /* 变深的绿色 */
+        }
+
+        /* 鼠标按下时的样式 */
+        .button:active {
+            background-color: #3e8e41;
+            /* 变深的绿色 */
+            box-shadow: 0 2px #666;
+            /* 改变阴影 */
+            transform: translateY(4px);
+            /* 向下移动 */
+        }
+    </style>
+</head>
+
+<body>
+    <button class="button">Click Me</button>
+</body>
+
+</html>
