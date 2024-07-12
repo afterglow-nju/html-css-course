@@ -1,91 +1,25 @@
-<style>
-    .subscribe-button {
-        background-color: rgb(200, 0, 0);
-        color: white;
-        border: none;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 16px;
-        padding-right: 16px;
-        border-radius: 2px;
-        cursor: pointer;
-        margin-right: 8;
-        transition: opacity 0.15s;
-        vertical-align: top;
+<!DOCTYPE html>
+<html>
 
-        /*transition between different style: property | value */
-    }
+<head>
+    <title>
+        Buttons Practice
+    </title>
+    <link rel="stylesheet" href="button.css">
+</head>
 
-    .subscribe-button:hover {
-        /*pseudo class: add styles in certain situation*/
-        opacity: 0.7;
-        /*0-1*/
-    }
+<body>
+    <button class="subscribe-button">
+        SUBSCRIBE !!!!
+    </button>
 
-    .subscribe-button:active {
-        opacity: 0.5;
-    }
+    <button class="join-button">
+        JOIN
+    </button>
 
-    .join-button {
-        background-color: white;
-        border-color: rgb(0, 110, 255);
-        border-style: solid;
-        color: rgb(104, 171, 219);
-        border-width: 1px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        padding-left: 16px;
-        padding-right: 16px;
-        border-radius: 2px;
-        cursor: pointer;
-        margin-right: 2px;
-        transition: background-color 0.15s,
-            color 0.15s;
-        /*transition property should not in hover, because when mouse move away, the transition won't work*/
-    }
+    <button class="tweet-button">
+        Tweet
+    </button>
+</body>
 
-    .join-button:hover {
-        background-color: rgb(0, 110, 255);
-        color: white;
-    }
-
-    .join-button:active {
-        opacity: 0.8;
-    }
-
-
-    .tweet-button {
-        background-color: rgb(0, 103, 176);
-        color: white;
-        border-radius: 18px;
-        /*border-color: rgb(0, 103, 176);*/
-        border: none;
-        height: 36px;
-        width: 74px;
-        border-style: solid;
-        font-weight: bold;
-        font-size: 15px;
-        cursor: pointer;
-        transition: box-shadow 0.15s;
-        vertical-align: top;
-    }
-
-    .tweet-button:hover {
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-        /*r,g,b,the opactiy*/
-        /*horizontal vertical blur*/
-    }
-</style>
-
-
-<button class="subscribe-button">
-    SUBSCRIBE !!!!
-</button>
-
-<button class="join-button">
-    JOIN
-</button>
-
-<button class="tweet-button">
-    Tweet
-</button>
+</html>
