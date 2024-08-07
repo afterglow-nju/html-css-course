@@ -53,7 +53,7 @@
 }*/
 
 .profile-picture {
-    width: 100%;
+    width: 36px;
     border-radius: 100%;
     margin-right: 200px;
 }
@@ -63,16 +63,57 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .thumbnail-row {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    position: relative;
 }
 
 .video-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
-    row-gap: 40px
+    row-gap: 40px;
+
+}
+
+@media (max-width:750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:999px) and (min-width:751px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+
+.video-time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: 500;
+
+
+    padding: 4px;
+
+
+    border-radius: 2px;
 }

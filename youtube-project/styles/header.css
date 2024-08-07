@@ -3,7 +3,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    z-index: 1;
 }
 
 .left-section {
@@ -46,12 +54,17 @@
     flex: 1;
     padding-left: 12px;
     font-size: 16px;
+
     border-width: 1px;
     border-style: solid;
     border-color: gray;
+
     border-radius: 4px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.15);
     width: 0;
+
+    border: 1px solid gray;
+
 }
 
 
@@ -67,10 +80,45 @@
     margin-right: 10px;
 }
 
+.search-button,
+.voice-button,
+.upload-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: Roboto, Arial;
+}
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload-container:hover .tooltip {
+    opacity: 1;
+}
+
+
 .search {
 
     height: 25px;
-    margin-top: 4px;
+
 }
 
 .voice-button {
@@ -83,7 +131,7 @@
 
 .voice {
     height: 24px;
-    margin-top: 4px;
+
 
 }
 
@@ -106,6 +154,25 @@
 
 .notifications {
     height: 24px;
+}
+
+.notifications-count {
+    position: absolute;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    top: -3px;
+    right: -3px;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+
+.notifications-container {
+    position: relative;
 }
 
 .current {
